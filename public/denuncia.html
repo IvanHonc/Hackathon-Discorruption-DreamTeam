@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DENUNCIA | MX INCORRUPTO </title> 
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="denuncia styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class = "container">
+          <div class="nav" style="list-style: none;">
+              <div id="container-menus">
+                  <ul>
+                      <a href="index.html" class="header-button"><li><button id="Button1">MÉXICO INCORRUPTO</button></li></a>
+                      <a href="nostrxs.html" class="header-button"><li><button id="Button2">Nosotrxs</button></li></a>
+                      <a href="denuncia.html" class="header-button"><li><button id="Button3">Denuncia</button></li></a>
+                      <a href="conectate.html" class="header-button"><li><button id="Button4">Conéctate</button></li></a>
+                      <a href="faq.html" class="header-button"><li><button id="Button5">FAQ</button></li></a>
+                      <a id="exit-button" href="#"><li><button id="Button6">Cerrar sesión</button></li></a>                
+                      <li class="leftSide"></li>     
+                  </ul>
+              </div>
+              <div id="container-img">
+                  <img id="nav-img" src="./assets/Nosotrxs.png" height="100%"width="80%">
+              </div>
+          </div>    
+      </div>
+    </header>
+    <section id="login-page">
+      <main  class="loginbox">
+        <h2>Log in</h2>
+        <form>
+          <img src="assets/google.png" style="left: 25%"><br><br>
+          <input type="submit" name="" value="Sign in with Google" id="sign-in-button" style="float:center">
+        </form>
+      </main>
+    </section>
+
+    <main class="content-pages">
+      <section id="main-page" style="display:none">
+        <p id="load"style="display:none">Firebase SDK Loading&hellip;</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="container-denuncia">
+            <div id="container-title">
+                <div class="container-label-denuncia"><label class="label-denuncia">DE</label></div>
+                <div class="container-label-denuncia"><label class="label-denuncia">NUN</label></div>
+                <div class="container-label-denuncia"><label class="label-denuncia">CIA</label></div>
+            </div>
+            <div id="container-form">
+                <p id="paragraph-intro" class="paragraph-form">
+                    Recuerda que mediante este proceso se buscan hacer públicos los casos
+                    de corrupción como medida alternativa para la ciudadanía, adicionalmente,
+                    por medio del botón final podrás conectar con personas que hayan
+                    vivenciado casos con o el o la misma servidora pública para comenzar un
+                    proceso legal.
+                </p>
+
+                <p id="paragraph-intro" class="paragraph-form">
+                    Los siguientes datos corresponden al MP sobre el que quieres presentar
+                    la denuncia:
+                </p>
+
+                <div><label class="form-subtitle">Estado</label></div>
+                <div class="container-input">
+                    <input list="estados" id="input-estado" name="estado">
+                    <datalist id="estados">
+                        <option value="Aguascalientes"></option>
+                        <option value="Baja California"></option>
+                        <option value="Baja California Sur"></option>
+                        <option value="Campeche"></option>
+                        <option value="Chiapas"></option>
+                        <option value="Chihuahua"></option>
+                        <option value="Ciudad de México"></option>
+                        <option value="Coahuila"></option>
+                        <option value="Colima"></option>
+                        <option value="Durango"></option>
+                        <option value="Estado de México"></option>
+                        <option value="Guanajuato"></option>
+                        <option value="Guerrero"></option>
+                        <option value="Hidalgo"></option>
+                        <option value="Jalisco"></option>
+                        <option value="Michoacán"></option>
+                        <option value="Morelos"></option>
+                        <option value="Nayarit"></option>
+                        <option value="Nuevo León"></option>
+                        <option value="Oaxaca"></option>
+                        <option value="Puebla"></option>
+                        <option value="Querétaro"></option>
+                        <option value="Quintana Roo"></option>
+                        <option value="San Luis Potosí"></option>
+                        <option value="Sinaloa"></option>
+                        <option value="Sonora"></option>
+                        <option value="Tabasco"></option>
+                        <option value="Tamaulipas"></option>
+                        <option value="Tlaxcala"></option>
+                        <option value="Veracruz"></option>
+                        <option value="Yucatán"></option>
+                        <option value="Zacatecas"></option>
+                    </datalist>
+                </div>
+
+                <div><label class="form-subtitle">Municipio o Alcaldía</label></div>
+                <div class="container-input">
+                    <input type="text" name="municipio" id="input-municipio">
+                </div>
+                
+                <div><label class="form-subtitle">Ministerio Público</label></div>
+                <div class="container-input">
+                    <input type="text" name="Ministerio" id="input-ministerio">
+                </div>
+
+                <div><label class="form-subtitle">Nombre de la funcionaria(o) pública(o)</label></div>
+                <div class="container-input">
+                    <input type="text" name="Ministerio" id="input-funcionario">
+                </div>
+
+                <div><label class="form-subtitle">Narración de los hechos</label></div>
+                <div class="container-input">
+                    <textarea name="Denuncia" id="input-denuncia"></textarea>
+                </div>
+
+                <div id="container-send-button">
+                    <button id="send-button">Enviar Denuncia</button>
+                </div>
+            </div>
+        </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    <script src="scripts/denuncia script.js"></script>
+  </body>
+</html>

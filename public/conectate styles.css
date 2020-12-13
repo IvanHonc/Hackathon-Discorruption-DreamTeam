@@ -1,0 +1,494 @@
+body {
+    margin: 0;
+    padding: 0;
+	min-width: 800px;
+}
+
+#header {
+    background-color: white;
+}
+
+.nav { 
+    background: white;
+    min-width: 80px;
+    height: 180px; 
+    width: 100%;
+    position: fixed;
+    font-family: "STSong";
+}
+  
+.nav ul {
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+    margin-left: 0%;
+    /* text-align: center; */
+}
+  
+.nav ul li {
+    top: 0px;
+    color: #fff;
+    display: inline-block; 
+    list-style: none;
+}
+
+.nav ul li img {
+    padding-top: -10%;
+}
+
+.ulLeft { 
+    text-align: right;
+}
+
+#container-menus {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+#container-img {
+    display: inline-block;
+    width: 20%;
+    height: 170px;
+    float: right;
+}
+
+#nav-img {
+    float: right;
+}
+
+.container {
+    min-width: 1px;
+    margin: auto;
+}
+
+.header-button {
+    padding-right: 10px;
+    padding-left: 10px;
+} 
+
+#Button1 {
+    background-color:white;
+    color: red;
+    border: 0px solid white;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 100px;
+    width: 150px;
+    font-size:30px;
+    font-weight: bold;
+    /* float: center; */
+    padding-right: 300px;
+}
+
+#Button2 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button3 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button4 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 90px;
+    font-size:17px; 
+}
+
+#Button5 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button6 {
+    background-color:white;
+    border: 0px solid white;
+    color:red;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button1:hover {
+    cursor:pointer;
+}
+
+#Button2:hover {
+    cursor:pointer;
+}
+
+#Button3:hover {
+    cursor:pointer;
+}
+
+#Button4:hover {
+    cursor:pointer;
+}
+
+#Button5:hover {
+    cursor:pointer;
+}
+
+#Button6:hover {
+    cursor:pointer;
+}
+
+.loginbox {
+	width: 400;
+	height: 520;
+	text-align: center;
+	color: black;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 40px; 
+	border: 1px solid;
+}
+
+.loginbox input[type="text"] , input[type="password"]{
+	border: none;
+	border-bottom: 1px solid  #FFFFFF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:white;
+}
+
+.loginbox input[type="submit"]{
+	border: none;
+	height: 30px;
+	background: #646464;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	background: #6D92B6;
+	color: black;
+}
+
+.loginbox a{
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 12pz;
+	color: #6D92B6;
+}  
+
+.loginbox a:hover {
+	cursor:pointer;
+	color:#5db1ff;
+}
+
+.TableDivision {
+    resize:both;
+    overflow:auto;
+}
+
+.FullSizeTable {
+    table-layout: fixed;
+    border: 0px solid black;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.FullSizeTable {
+    table-layout: fixed;
+    border: 0px solid black;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tdID {
+    height: 100%;
+    border: 1px solid black;
+    overflow: auto;
+    color:white;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size:20px; 
+    background-color: black;
+    font-weight: bold;
+}
+
+input [type = text] {
+width: 100%;
+padding: 10px 20px;
+margin: 8px 0;
+}
+
+.Municipio {
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.Denuncias {
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+
+}
+
+#B1 {
+background-color: red;
+border: 0px solid red;
+color:white;
+align-items: center;
+font-family:'Helvetica';
+height: 50px;
+width: 140px;
+font-size:20px; 
+font-weight: bold;
+}
+
+#B1:hover {
+    cursor:pointer;
+}
+
+.CellAlign {
+    text-align: center;
+}
+
+.button-table-container {
+    text-align: center;
+}
+
+.FullSizeTable2 {
+    width: 100%;
+}
+
+.tdID1 {
+    height: 100%;
+    border: 0px solid white;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+    background-color: white;
+    width: 30%;
+}
+
+.tdID2 {
+    height: 100%;
+    border: 8px solid grey;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+    background-color: white;
+    width: 60%;
+}
+
+.Paragraph0 {
+    color: grey;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 20px;
+}   
+
+.Paragraph1 {
+    color: black;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 20px;
+}
+
+.Paragraph2 {
+    color: black;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Paragraph3 {
+    color: black;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 20px;
+}
+
+.Paragraph4 {
+    color: black;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 15px;
+}
+
+.Paragraph5 {
+    color: black;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 12px;
+}
+
+#Button7 {
+    background-color: red ;
+    color: White;
+    font-family:'Helvetica';
+    height: 40px;
+    width: 140px;
+    font-size:17px;
+    text-decoration: underline;
+}
+
+.connect-button {
+    display: inline-block;
+    position: relative;
+    margin: 1em;
+    padding: 0.67em;
+    border: 2px solid #FFF;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 2em;
+    outline: none;
+    color: #FFF;
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+}
+
+.connect-button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.connect-button:before,
+.connect-button:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+.connect-button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+.connect-button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+}
+
+/* Span on :hover and :active */
+
+.connect-button:hover span,
+.connect-button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.connect-button:hover:before,
+.connect-button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.connect-button:active:before {
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.button-table-container {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#Button8 {
+    background-color: red ;
+    color: White;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 170px;
+    font-size:17px;
+    font-weight:bold;
+}

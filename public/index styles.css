@@ -1,0 +1,292 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 800px;
+}
+
+#header {
+    background-color: white;
+}
+
+.nav { 
+    background: white;
+    min-width: 80px;
+    height: 190px; 
+    width: 100%;
+    position: fixed;
+    font-family: "STSong";
+}
+  
+.nav ul {
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+    margin-left: 0%;
+    /* text-align: center; */
+}
+  
+.nav ul li {
+    top: 0px;
+    color: #fff;
+    display: inline-block; 
+    list-style: none;
+}
+
+.nav ul li img {
+    padding-top: -10%;
+}
+
+.ulLeft { 
+    text-align: right;
+}
+
+#container-menus {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+#container-img {
+    display: inline-block;
+    width: 20%;
+    height: 170px;
+    float: right;
+}
+
+#nav-img {
+    float: right;
+}
+
+.container {
+    min-width: 1px;
+    margin: auto;
+}
+
+.header-button {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#Button1 {
+    background-color:white;
+    color: red;
+    border: 0px solid white;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 100px;
+    width: 150px;
+    font-size:30px;
+    font-weight: bold;
+    /* float: center; */
+    padding-right: 300px;
+}
+
+#Button2 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button3 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button4 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 90px;
+    font-size:17px; 
+}
+
+#Button5 {
+    background-color:white;
+    border: 0px solid white;
+    color:black;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px; 
+}
+
+#Button6 {
+    background-color:white;
+    border: 0px solid white;
+    color:red;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 80px;
+    font-size:17px;  
+}
+
+#Button1:hover {
+    cursor:pointer;
+}
+
+#Button2:hover {
+    cursor:pointer;
+}
+
+#Button3:hover {
+    cursor:pointer;
+}
+
+#Button4:hover {
+    cursor:pointer;
+}
+
+#Button5:hover {
+    cursor:pointer;
+}
+
+#Button6:hover {
+    cursor:pointer;
+}
+
+.loginbox {
+	width: 400;
+	height: 520;
+	text-align: center;
+	color: black;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 40px; 
+	border: 1px solid;
+}
+
+.loginbox input[type="text"] , input[type="password"]{
+	border: none;
+	border-bottom: 1px solid  #FFFFFF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:white;
+}
+
+.loginbox input[type="submit"]{
+	border: none;
+	height: 30px;
+	background: #646464;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	background: #6D92B6;
+	color: black;
+}
+
+.loginbox a{
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 12pz;
+	color: #6D92B6;
+}  
+
+.loginbox a:hover {
+	cursor:pointer;
+	color:#5db1ff;
+}
+
+#TableDivision {
+    resize:both;
+    overflow:auto;
+}
+
+#FullSizeTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#tdID1 {
+    height: 100%;
+    border: 0px solid white;
+    padding: 0;
+    margin: 0px;
+    overflow: auto;
+    color: white;
+    background-color: white;
+}
+
+#Paragraph0 {
+    color: red;
+    text-align: center;
+    font-family:'Helvetica';
+    font-size: 51px;
+    font-weight: bold;
+}
+
+.Button1 {
+    background-color:black ;
+    color: white;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 700px;
+    font-size:17px;
+}
+
+.Button1:hover {
+    cursor: pointer;
+}
+
+.Button2 {
+    background-color:red ;
+    color: white;
+    align-items: center;
+    font-family:'Helvetica';
+    height: 50px;
+    width: 700px;
+    font-size:17px; 
+}
+
+.Button2:hover {
+    cursor: pointer;
+  }
+
+#exit-button {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#CellDivision {
+    text-align: center;
+}
+
+#Paragraph1 {
+    color: black;
+    text-align: left;
+    font-family:'Helvetica';
+    font-size: 46px;
+    font-weight: bold; 
+}
+
+#container-lower-img {
+    width: 20%;
+    height: 300px;
+}

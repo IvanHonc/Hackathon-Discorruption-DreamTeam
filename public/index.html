@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME | MX INCORRUPTO </title> 
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="index styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class = "container">
+          <div class="nav" style="list-style: none;">
+              <div id="container-menus">
+                  <ul>
+                      <a href="index.html" class="header-button"><li><button id="Button1">MÉXICO INCORRUPTO</button></li></a>
+                      <a href="nostrxs.html" class="header-button"><li><button id="Button2">Nosotrxs</button></li></a>
+                      <a href="denuncia.html" class="header-button"><li><button id="Button3">Denuncia</button></li></a>
+                      <a href="conectate.html" class="header-button"><li><button id="Button4">Conéctate</button></li></a>
+                      <a href="faq.html" class="header-button"><li><button id="Button5">FAQ</button></li></a>
+                      <a id="exit-button" href="#"><li><button id="Button6">Cerrar sesión</button></li></a>                
+                      <li class="leftSide"></li>     
+                  </ul>
+              </div>
+              <div id="container-img">
+                  <img id="nav-img" src="./assets/Nosotrxs.png" height="100%"width="80%">
+              </div>
+          </div>    
+      </div>
+    </header>
+    <section id="login-page">
+      <main  class="loginbox">
+        <h2>Log in</h2>
+        <form>
+          <img src="assets/google.png" style="left: 25%"><br><br>
+          <input type="submit" name="" value="Sign in with Google" id="sign-in-button" style="float:center">
+        </form>
+      </main>
+    </section>
+
+    <main class="content-pages">
+      <section id="main-page" style="display:none">
+        <p id="load"style="display:none">Firebase SDK Loading&hellip;</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="TableDivision">
+          <table id="FullSizeTable">
+            <tr>
+              <col style="width:15%">
+              <col style="width:60%">
+              <col style="width:15%">
+              <td id="tdID1"><div id="CellDivision"></div></td>
+              <td id="tdID1">
+                <div id="CellDivision">
+                  <br>
+                  <p id='Paragraph0'>MÉXICO INCORRUPTO</p>
+                  <a href="nostrxs.html" class="header-button"><button class="Button1">Nosotrxs</button></a>
+                  <br><br>
+                  <a href="denuncia.html" class="header-button"><button class="Button2">Denuncia</button></a>
+                  <br><br>
+                  <a href="conectate.html" class="header-button"><button class="Button1">Conéctate</button></a>
+                  <br><br>
+                  <a href="faq.html" class="header-button"><button class="Button2">FAQ</button></a>
+                  <br><br>
+                </div>
+              </td>
+              <td id="tdID1"><div id="CellDivision"></div></td>
+            </tr>  
+          </table>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div id="container-lower-img">
+          <img id="lower-img" src="./assets/InicioSuperior2.png" height="100%"width="80%">
+        </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    <script src="scripts/index script.js"></script>
+  </body>
+</html>

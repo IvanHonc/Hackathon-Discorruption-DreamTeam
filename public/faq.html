@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ | MX INCORRUPTO </title> 
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-performance.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <link href="./faq styles.css" type="text/css" rel="stylesheet">
+</head>
+
+    <body>
+        <header id="header">
+            <div class = "container">
+                <div class="nav" style="list-style: none;">
+                    <div id="container-menus">
+                        <ul>
+                            <a href="index.html" class="header-button"><li><button id="Button1">MÉXICO INCORRUPTO</button></li></a>
+                            <a href="nostrxs.html" class="header-button"><li><button id="Button2">Nosotrxs</button></li></a>
+                            <a href="denuncia.html" class="header-button"><li><button id="Button3">Denuncia</button></li></a>
+                            <a href="conectate.html" class="header-button"><li><button id="Button4">Conéctate</button></li></a>
+                            <a href="faq.html" class="header-button"><li><button id="Button5">FAQ</button></li></a>
+                            <a id="exit-button" href="#"><li><button id="Button6">Cerrar sesión</button></li></a>                
+                            <li class="leftSide"></li>     
+                        </ul>
+                    </div>
+                    <div id="container-img">
+                        <img id="nav-img" src="./assets/Nosotrxs.png" height="100%"width="80%">
+                    </div>
+                </div>    
+            </div>
+        </header>
+
+        <section id="login-page">
+            <main  class="loginbox">
+              <h2>Log in</h2>
+              <form>
+                <img src="assets/google.png" style="left: 25%"><br><br>
+                <input type="submit" name="" value="Sign in with Google" id="sign-in-button" style="float:center">
+              </form>
+            </main>
+        </section>
+      
+        <main class="content-pages">
+        <section id="main-page" style="display:none">
+            <p id="load"style="display:none">Firebase SDK Loading&hellip;</p>
+            <div id="TableDivision">
+                <table id="FullSizeTable">
+                    <tr>
+                        <col style="width:70%">
+                        <col style="width:30%">
+                        <td id ="tdID1"><div id ="CellDivision">
+                            <br><br><br><br><br><br><br><br><br><br>
+                            <p id ='Paragraph0'>¿MI IDENTIDAD SE ENCUENTRA EN RIESGO?</p>
+                            <p id ='Paragraph1'>No, en México Incorrupto protegemos tus datos personales y sólo se podrá acceder a ellos en caso de que otra persona denunciante desee contactarte y tú aceptes.</p>
+                            <br><p id ='Paragraph0'> ¿ESTA DENUNCIA SUSTITUYE UN PROCESO LEGAL? </p>
+                            <p id ='Paragraph1'> No, esta plataforma ayuda a visibilizar actos de corrupción y conectarte con otras y otros ciudadanos que hayan vivenciado estos con las o los mismos funcionarios públicos, sin embargo somos incisivxs en la necesidad de levantar denuncias ante estos hechos.</p>
+                            <br><p id ='Paragraph0'>¿POR QUÉ DEBERÍA DENUNCIAR?</p>
+                            <p id ='Paragraph1'>La corrupción es un fenómeno extendido a lo largo de nuestro país que, en gran parte de las ocasiones, impera la impunidad. Coadyuvar a la existencia de una cultura de denuncia puede impedir que los intereses personales sean la regla y se convierta en la excepción. Con tu ayuda construiremos un México más transparente e incorrupto.</p>
+                            <br><p id ='Paragraph0'>¿POR QUÉ DEBERÍA CONECTARME CON OTRAS PERSONAS DENUNCIANTES?</p>
+                            <p id ='Paragraph1'>Creemos que los lazos comunitarios son sumamente poderosos. Al conectarte con personas que han vivido experiencias de corrupción como las tuyas, podrán comenzar un proceso legal (como una querella) que ayude a que haya repercusiones legales para los Ministerios y personal público que incumple con su labor.</p>
+                            <br><p id ='Paragraph0'>¿QUÉ PASA DESPUÉS DE ENVIAR MI DENUNCIA?</p>  
+                            <p id ='Paragraph1'>Una vez que se reciben las denuncias, éstas son publicadas anónimamente en el apartado "Conéctate".</p>
+                            <br><p id ='Paragraph0'>¿QUÉ SUCEDE CUANDO UNA PERSONA DESEA CONECTARSE CONMIGO?</p>
+                            <p id ='Paragraph1'>Se te enviará un correo consultando si deseas ponerte en contacto con la persona o no. Solamente si accedes, ésta podrá conocer tu dirección de correo y tú el suyo. Una vez conectados, podrán comenzar a interactuar para proceder legalmente. </p>
+                            <br><p id ='Paragraph0'>¿TODAS LAS DENUNCIAS VAN A HACER MATCH CON LAS DE OTRAS PERSONAS?</p> 
+                            <p id ='Paragraph1'>No necesariamente, sólo en caso de que una persona desee contactarse contigo, o tú con alguna, se podrá hacer la conexión.</p>
+                            <br><p id ='Paragraph0'>¿PUEDO INICIAR MI PROCESO DE QUERELLA EN LA PÁGINA?</p> 
+                            <p id ='Paragraph1'>Por ahora no contamos con asesoría legal, sin embargo, te compartimos el siguiente link, donde puedes consultar una guía para denunciar: https://denuncia.org/proceso-de-denuncia/</p> 
+                            <br><p id ='Paragraph0'>DESPUÉS DE HACER LA DENUNCIA, ¿PUEDO CONSULTAR LAS EVIDENCIAS QUE ADJUNTÉ PREVIAMENTE?</p> 
+                            <p id ='Paragraph1'>Todas las evidencias son encriptadas para proteger los derechos de las y los denunciantes, no obstante, las y los autores podrán consultar sus archivos adjuntos en "Mis denuncias".</p>
+                        </td>
+                        <td id="tdID1"><div id="CellDivision"></div>
+                            <p id ='Paragraph2'>F<br>A<br>Q</p>
+                        </td>  
+                    </tr>
+                </table>
+            </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const loadEl = document.querySelector('#load');
+              try {
+                let app = firebase.app();
+                let features = [
+                  'auth', 
+                  'database', 
+                  'messaging', 
+                  'storage', 
+                  'analytics', 
+                  'remoteConfig',
+                  'performance',
+                ].filter(feature => typeof app[feature] === 'function');
+                loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+              } catch (e) {
+                console.error(e);
+                loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+              }
+            });
+        </script>    
+        <script src="scripts/index script.js"></script>
+    </body>              
+</html>           
